@@ -1,0 +1,35 @@
+{
+  "name": "ottawajs-getting-started",
+  "version": "1.0.0",
+  "main": "server/server.js",
+  "scripts": {
+    "pretest": "jshint .",
+    "test": "node_modules/.bin/mocha tests/*.js"
+  },
+  "dependencies": {
+    "compression": "^1.0.3",
+    "cors": "^2.5.2",
+    "errorhandler": "^1.1.1",
+    "loopback": "2.14.0",
+    "loopback-boot": "2.6.5",
+    "loopback-component-storage": "1.3.1",
+    "loopback-datasource-juggler": "2.21.0",
+    "loopback-explorer": "1.7.1",
+    "serve-favicon": "^2.0.1"
+  },
+  "optionalDependencies": {
+    "loopback-explorer": "^1.1.0"
+  },
+  "devDependencies": {
+    "chai": "^2.2.0",
+    "jshint": "^2.5.6",
+    "mocha": "^2.2.4",
+    "supertest": "^0.15.0",
+    "supertest-as-promised": "^2.0.0"
+  },
+  "repository": {
+    "type": "",
+    "url": ""
+  },
+  "description": "ottawajs-getting-started"
+}

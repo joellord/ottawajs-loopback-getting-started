@@ -1,0 +1,40 @@
+{
+  "name": "Post",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "properties": {
+    "content": {
+      "type": "string"
+    },
+    "isCool": {
+      "type": "boolean"
+    }
+  },
+  "hidden": ["isCool"],
+  "relations": {
+    "owner": {
+      "type": "belongsTo",
+      "model": "User",
+      "foreignKey": "userId"
+    }
+  },
+  "validations": [],
+  "acls": [{
+    "principalType": "ROLE",
+    "principalId": "$everyone",
+    "permission": "DENY"
+  }, {
+    "accessType": "READ",
+    "principalType": "ROLE",
+    "principalId": "$authenticated",
+    "permission": "ALLOW",
+    "property": "*"
+  }, {
+    "accessType": "WRITE",
+    "principalType": "ROLE",
+    "principalId": "$authenticated",
+    "permission": "ALLOW",
+    "property": "create"
+  }],
+  "methods": []
+}

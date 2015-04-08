@@ -1,0 +1,32 @@
+{
+  "globals": {
+    "after": true,
+      "afterEach": true,
+      "assert": true,
+      "before": true,
+      "beforeEach": true,
+      "describe": true,
+      "expect": true,
+      "it": true,
+      "Promise": true
+  },
+    "node": true,
+    "esnext": true,
+    "bitwise": true,
+    "camelcase": true,
+    "eqeqeq": true,
+    "eqnull": true,
+    "immed": true,
+    "indent": 2,
+    "latedef": "nofunc",
+    "newcap": true,
+    "nonew": true,
+    "noarg": true,
+    "quotmark": "single",
+    "regexp": true,
+    "undef": true,
+    "unused": false,
+    "trailing": true,
+    "sub": true,
+    "maxlen": 80
+}
